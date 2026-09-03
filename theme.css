@@ -63,25 +63,25 @@
   --ui-panel-padding-y: 1.5rem;
 
   /* base shadcn */
-  --background: oklch(0.972 0.011 154);
-  --foreground: oklch(0.235 0.026 176);
-  --card: oklch(0.991 0.004 145);
-  --card-foreground: oklch(0.235 0.026 176);
-  --popover: oklch(0.991 0.004 145);
-  --popover-foreground: oklch(0.235 0.026 176);
-  --primary: oklch(0.78 0.185 152);
-  --primary-foreground: oklch(0.18 0.02 160);
-  --secondary: oklch(0.954 0.018 162);
-  --secondary-foreground: oklch(0.235 0.026 176);
-  --muted: oklch(0.954 0.018 162);
-  --muted-foreground: oklch(0.445 0.034 172);
-  --accent: oklch(0.9 0.205 102);
-  --accent-foreground: oklch(0.17 0.018 158);
-  --destructive: oklch(0.59 0.213 25);
+  --background: oklch(0.96 0.014 310);
+  --foreground: oklch(0.26 0.04 300);
+  --card: oklch(0.985 0.008 310);
+  --card-foreground: oklch(0.26 0.04 300);
+  --popover: oklch(0.985 0.008 310);
+  --popover-foreground: oklch(0.26 0.04 300);
+  --primary: oklch(0.48 0.2 300);
+  --primary-foreground: oklch(0.98 0.02 310);
+  --secondary: oklch(0.93 0.02 308);
+  --secondary-foreground: oklch(0.28 0.04 300);
+  --muted: oklch(0.93 0.02 308);
+  --muted-foreground: oklch(0.48 0.04 302);
+  --accent: oklch(0.68 0.19 45);
+  --accent-foreground: oklch(0.2 0.05 40);
+  --destructive: oklch(0.56 0.23 25);
   --destructive-foreground: oklch(0.98 0.01 25);
-  --border: oklch(0.89 0.022 162);
-  --input: oklch(0.89 0.022 162);
-  --ring: oklch(0.736 0.058 160);
+  --border: oklch(0.87 0.02 308);
+  --input: oklch(0.87 0.02 308);
+  --ring: oklch(0.6 0.2 300);
 
   /* shadow — cor base + variantes soft via color-mix, mesma cadeia do repositório de referência */
   --shadow-color: oklch(0.828 0.021 170);
@@ -99,12 +99,12 @@
   --sidebar-width-expanded: 17.5rem;
   --sidebar-width-collapsed: 5.5rem;
 
-  --sidebar-bg-start: oklch(0.963 0.018 158);
-  --sidebar-bg-end: oklch(0.938 0.03 164);
-  --sidebar-bg: linear-gradient(180deg, var(--sidebar-bg-start) 0%, var(--sidebar-bg-end) 100%);
-  --sidebar-bg-admin-start: oklch(0.97 0.01 160);
-  --sidebar-bg-admin-end: oklch(0.948 0.019 162);
-  --sidebar-bg-admin: linear-gradient(180deg, var(--sidebar-bg-admin-start) 0%, var(--sidebar-bg-admin-end) 100%);
+  --sidebar-bg-start: oklch(0.945 0.02 308);
+  --sidebar-bg-end: oklch(0.915 0.032 312);
+  --sidebar-bg: linear-gradient(180deg, oklch(0.945 0.02 308) 0%, oklch(0.915 0.032 312) 100%);
+  --sidebar-bg-admin-start: oklch(0.935 0.028 45);
+  --sidebar-bg-admin-end: oklch(0.905 0.038 42);
+  --sidebar-bg-admin: linear-gradient(180deg, oklch(0.935 0.028 45) 0%, oklch(0.905 0.038 42) 100%);
 
   /* status semântico — texto/banner de aviso. */
   --warning: oklch(0.45 0.15 65);
@@ -180,25 +180,10 @@
      existe neste arquivo (é o único tema instalado), mas continua nomeado de forma genérica —
      um segundo tema instalado redeclarararia essas mesmas variáveis sob seu próprio
      [data-theme="..."], nunca por cima de "venore-slime". */
-  --app-bg-start: oklch(0.982 0.012 146);
+  --app-bg-start: oklch(0.965 0.014 310);
   --app-bg-mid: oklch(0.954 0.024 156);
-  --app-bg-end: oklch(0.962 0.024 166);
-  --app-background: radial-gradient(
-      140% 88% at 12% 8%,
-      color-mix(in oklch, var(--accent) 12%, transparent) 0%,
-      transparent 52%
-    ),
-    radial-gradient(
-      120% 92% at 82% 18%,
-      color-mix(in oklch, var(--primary) 10%, var(--popover)) 0%,
-      transparent 58%
-    ),
-    radial-gradient(
-      130% 110% at 50% 100%,
-      color-mix(in oklch, var(--popover) 68%, var(--app-bg-end)) 0%,
-      transparent 62%
-    ),
-    linear-gradient(180deg, var(--app-bg-start) 0%, var(--app-bg-mid) 46%, var(--app-bg-end) 100%);
+  --app-bg-end: oklch(0.925 0.03 312);
+  --app-background: radial-gradient(90% 60% at 100% 100%, color-mix(in oklch, oklch(0.68 0.19 45) 14%, transparent) 0%, transparent 55%), radial-gradient(90% 60% at 0% 0%, color-mix(in oklch, oklch(0.48 0.2 300) 16%, transparent) 0%, transparent 55%), linear-gradient(180deg, oklch(0.965 0.014 310) 0%, oklch(0.92 0.032 312) 100%);
 
   --header-bg: oklch(0.982 0.008 152);
   --header-chip-bg: color-mix(in oklch, var(--header-bg) 74%, var(--card));
@@ -209,25 +194,25 @@
 }
 
 [data-theme="sorcerers"].dark {
-  --background: oklch(0.145 0.016 162);
-  --foreground: oklch(0.95 0.017 146);
-  --card: oklch(0.182 0.015 171);
-  --card-foreground: oklch(0.95 0.017 146);
-  --popover: oklch(0.182 0.015 171);
-  --popover-foreground: oklch(0.95 0.017 146);
-  --primary: oklch(0.84 0.205 150);
-  --primary-foreground: oklch(0.17 0.018 158);
-  --secondary: oklch(0.214 0.018 166);
-  --secondary-foreground: oklch(0.95 0.017 146);
-  --muted: oklch(0.214 0.018 166);
-  --muted-foreground: oklch(0.82 0.03 154);
-  --accent: oklch(0.94 0.214 131);
-  --accent-foreground: oklch(0.17 0.018 158);
-  --destructive: oklch(0.64 0.226 26);
+  --background: oklch(0.16 0.03 300);
+  --foreground: oklch(0.93 0.02 312);
+  --card: oklch(0.2 0.035 300);
+  --card-foreground: oklch(0.93 0.02 312);
+  --popover: oklch(0.2 0.035 300);
+  --popover-foreground: oklch(0.93 0.02 312);
+  --primary: oklch(0.72 0.22 300);
+  --primary-foreground: oklch(0.14 0.04 300);
+  --secondary: oklch(0.26 0.04 300);
+  --secondary-foreground: oklch(0.93 0.02 312);
+  --muted: oklch(0.26 0.04 300);
+  --muted-foreground: oklch(0.7 0.04 305);
+  --accent: oklch(0.74 0.2 45);
+  --accent-foreground: oklch(0.16 0.05 40);
+  --destructive: oklch(0.65 0.24 25);
   --destructive-foreground: oklch(0.98 0.01 25);
-  --border: oklch(0.318 0.029 161);
-  --input: oklch(0.318 0.029 161);
-  --ring: oklch(0.458 0.056 156);
+  --border: oklch(0.33 0.04 300);
+  --input: oklch(0.33 0.04 300);
+  --ring: oklch(0.74 0.2 45);
 
   --shadow-color: oklch(0.082 0.004 170);
   --shadow-color-strong: oklch(0.042 0.003 170);
@@ -237,12 +222,12 @@
   --shadow-float: 0 18px 44px -28px var(--shadow-color-strong-soft);
   --shadow-header: 0 12px 30px -24px var(--shadow-color-strong-soft);
 
-  --sidebar-bg-start: oklch(0.16 0.014 168);
-  --sidebar-bg-end: oklch(0.131 0.018 162);
-  --sidebar-bg: linear-gradient(180deg, var(--sidebar-bg-start) 0%, var(--sidebar-bg-end) 100%);
-  --sidebar-bg-admin-start: oklch(0.197 0.013 170);
-  --sidebar-bg-admin-end: oklch(0.17 0.016 160);
-  --sidebar-bg-admin: linear-gradient(180deg, var(--sidebar-bg-admin-start) 0%, var(--sidebar-bg-admin-end) 100%);
+  --sidebar-bg-start: oklch(0.155 0.03 302);
+  --sidebar-bg-end: oklch(0.125 0.026 304);
+  --sidebar-bg: linear-gradient(180deg, oklch(0.155 0.03 302) 0%, oklch(0.125 0.026 304) 100%);
+  --sidebar-bg-admin-start: oklch(0.17 0.04 44);
+  --sidebar-bg-admin-end: oklch(0.135 0.034 42);
+  --sidebar-bg-admin: linear-gradient(180deg, oklch(0.17 0.04 44) 0%, oklch(0.135 0.034 42) 100%);
 
   --warning: oklch(0.78 0.16 65);
   --warning-foreground: oklch(0.17 0.02 65);
@@ -262,25 +247,10 @@
   --chart-6: oklch(0.62 0.17 235);
   --chart-7: oklch(0.64 0.18 350);
 
-  --app-bg-start: oklch(0.136 0.018 170);
+  --app-bg-start: oklch(0.17 0.03 300);
   --app-bg-mid: oklch(0.136 0.018 170);
-  --app-bg-end: oklch(0.124 0.023 164);
-  --app-background: radial-gradient(
-      140% 88% at 12% 8%,
-      color-mix(in oklch, var(--accent) 16%, transparent) 0%,
-      transparent 52%
-    ),
-    radial-gradient(
-      120% 92% at 82% 18%,
-      color-mix(in oklch, var(--primary) 12%, var(--popover)) 0%,
-      transparent 58%
-    ),
-    radial-gradient(
-      130% 110% at 50% 100%,
-      color-mix(in oklch, var(--popover) 68%, var(--app-bg-end)) 0%,
-      transparent 62%
-    ),
-    linear-gradient(180deg, var(--app-bg-start) 0%, var(--app-bg-mid) 46%, var(--app-bg-end) 100%);
+  --app-bg-end: oklch(0.13 0.028 302);
+  --app-background: radial-gradient(90% 60% at 100% 100%, color-mix(in oklch, oklch(0.74 0.2 45) 18%, transparent) 0%, transparent 50%), radial-gradient(90% 60% at 0% 0%, color-mix(in oklch, oklch(0.72 0.22 300) 20%, transparent) 0%, transparent 50%), linear-gradient(180deg, oklch(0.17 0.03 300) 0%, oklch(0.12 0.026 302) 100%);
 
   --header-bg: oklch(0.136 0.018 170);
   --header-chip-bg: color-mix(in oklch, var(--header-bg) 74%, var(--card));
