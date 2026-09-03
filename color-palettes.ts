@@ -1,20 +1,22 @@
 import { generateHueRotationPalettes, THEME_HUE_PRESETS } from "@venore/theme-sdk/palettes";
 
+// Base = violeta elétrico + magenta de conjuração do theme.css (esquema forte desta sessão). As
+// rotações de hue derivam variações mantendo a mesma força de chroma.
 export const SORCERERS_COLOR_PALETTES = generateHueRotationPalettes(
   {
     light: {
-      primary: "oklch(0.48 0.2 300)",
-      primaryForeground: "oklch(0.98 0.02 310)",
-      accent: "oklch(0.68 0.19 45)",
-      accentForeground: "oklch(0.2 0.05 40)",
-      ring: "oklch(0.6 0.2 300)",
+      primary: "oklch(0.52 0.26 295)",
+      primaryForeground: "oklch(0.98 0.02 300)",
+      accent: "oklch(0.62 0.26 340)",
+      accentForeground: "oklch(0.99 0.02 340)",
+      ring: "oklch(0.55 0.24 295)",
     },
     dark: {
-      primary: "oklch(0.72 0.22 300)",
-      primaryForeground: "oklch(0.14 0.04 300)",
-      accent: "oklch(0.74 0.2 45)",
-      accentForeground: "oklch(0.16 0.05 40)",
-      ring: "oklch(0.74 0.2 45)",
+      primary: "oklch(0.68 0.27 295)",
+      primaryForeground: "oklch(0.12 0.04 295)",
+      accent: "oklch(0.72 0.26 340)",
+      accentForeground: "oklch(0.12 0.04 340)",
+      ring: "oklch(0.68 0.27 295)",
     },
   },
   THEME_HUE_PRESETS,
