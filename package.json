@@ -1,6 +1,6 @@
 {
   "name": "@venore/theme-sorcerers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Sorcerers — refatoração completa: \"Conclave\", header flutuante com glow arcano, magenta-violeta sobre neutros frios.",
   "private": true,
   "type": "module",
